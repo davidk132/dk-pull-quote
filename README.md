@@ -35,7 +35,7 @@ For measurements of font size, line height, padding, margin, width and border_wi
 
 * 'tag': HTML tag for the container around the pull quote. Defaults to `<div>`
 * 'font_size': Size of text, defaults to `2rem`.
-* 'font_color': Color of text defaults to black.
+* 'font_color': Color of text defaults to `black`.
 * 'line_height': Defaults to `1.5`.
 * 'justify': Defaults to `right`. The only other acceptable option is `left`.
 * 'padding': Defaults to `10px`.
