@@ -36,13 +36,13 @@ For measurements of font size, line height, padding, margin, width and border_wi
 * 'tag': HTML tag for the container around the pull quote. Defaults to `<div>`
 * 'font_size': Size of text, defaults to `2rem`.
 * 'font_color': Color of text defaults to black.
-* 'line_height': Defaults to 1.5.
-* 'justify': Defaults to right. The only other acceptable option is `left`.
+* 'line_height': Defaults to `1.5`.
+* 'justify': Defaults to `right`. The only other acceptable option is `left`.
 * 'padding': Defaults to `10px`.
 * 'margin': Defaults to `10px`.
-* 'width': Defaults to '20%'.
-* 'border_width': Defaults to '1px'.
-* 'border_color': Defaults to blue.
+* 'width': Defaults to `20%`.
+* 'border_width': Defaults to `1px`.
+* 'border_color': Defaults to `blue`.
 * 'border_top': Defaults to `true`, i.e., visible
 * 'border_right':Defaults to `false`, i.e. invisible
 * 'border_bottom': Defaults to `true`.
