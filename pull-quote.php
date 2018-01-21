@@ -30,19 +30,17 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Main class for creating pull quotes.
  *
- * The shortcode is defined and hooked into core from this class. It can be
- * instantiated any number of times, in order to put more than one pull quotes
- * in the $content copy.
+ * The shortcode is defined and hooked into core from this class.
  *
  * Usage:
  *
- * `[dk_pull_quote]My Pull Quote Copy Here[/dk_pull_quote]`
+ * [dk_pull_quote]My Pull Quote Copy Here[/dk_pull_quote]
  *
  * Attributes: The below shortcode attributes are default. They can all be
  * changed within the shortcode declaration. See the Shortcode API docs for
  * more information. Sample usage with attributes:
  *
- * `[dk_pull_quote justify="left" tag="h2" font_color=""]My Pull Quote Copy Here[/dk_pull_quote]`
+ * [dk_pull_quote justify="left" tag="h2" font_color=""]My Pull Quote Copy Here[/dk_pull_quote]
  *
  * Default Attributes are defined in the function `make_pull_quote` below. The four
  * attributes for border side accept true or false; each side will be shown if true
@@ -74,7 +72,7 @@ class Pull_Quotes {
 
   /**
    * Executes any actions related to deactivation of this plugin. Anything can be
-   * hooked onto the action `dk_pull_quote`, i.e. from `functions.php` or another
+   * hooked onto the action 'dk_pull_quote', i.e. from 'functions.php' or another
    * plugin class. Ideal use case might be to clean out specialized theme mods or
    * options used by this plugin. Always a good idea to clean up our messes!
    *
