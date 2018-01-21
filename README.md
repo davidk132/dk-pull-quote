@@ -18,8 +18,10 @@ Sample implementation:
 
 In order for this or any shortcodes to work in excerpts or widgets, insert the following into your `functions.php`:
 
-`add_filter( 'the_excerpt', 'do_shortcode' );`
-`add_filter( 'widget_text', 'do_shortcode' );`
+```
+add_filter( 'the_excerpt', 'do_shortcode' );
+add_filter( 'widget_text', 'do_shortcode' );
+```
 
 ### Attributes
 
@@ -44,6 +46,6 @@ For measurements of font size, line height, padding, margin, width and border_wi
 * 'border_width': Defaults to `1px`.
 * 'border_color': Defaults to `blue`.
 * 'border_top': Defaults to `true`, i.e., visible
-* 'border_right':Defaults to `false`, i.e. invisible
+* 'border_right': Defaults to `false`, i.e. invisible
 * 'border_bottom': Defaults to `true`.
 * 'border_left': Defaults to `false`.
