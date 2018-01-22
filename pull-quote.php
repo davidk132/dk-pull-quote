@@ -72,7 +72,7 @@ class Pull_Quotes {
 
   /**
    * Executes any actions related to deactivation of this plugin. Anything can be
-   * hooked onto the action 'dk_pull_quote', i.e. from 'functions.php' or another
+   * hooked onto the action 'dk_pull_quote_deactivate', i.e. from 'functions.php' or another
    * plugin class. Ideal use case might be to clean out specialized theme mods or
    * options used by this plugin. Always a good idea to clean up our messes!
    *
@@ -126,6 +126,7 @@ class Pull_Quotes {
    *
    */
   private function parse_pull_quote_markup( $content = '' ) {
+    $tag = esc_html( $this->atts['tag'] );
     $font_size = 'font-size: ' . esc_html( $this->atts['font_size'] ) . ';';
     $line_height = 'line-height: ' . esc_html( $this->atts['line_height'] ) . ';';
     $font_color = 'color: ' . esc_html( $this->atts['font_color'] ) . ';';
@@ -140,7 +141,7 @@ class Pull_Quotes {
 
     $style = sprintf( '"%s %s %s %s %s %s %s %s %s %s %s"', $font_size, $line_height, $font_color, $justify, $padding, $margin, $width, $border_top, $border_right, $border_bottom, $border_left );
 
-    return sprintf( '<%s class="dk-pull-quote" style=%s>%s</%s><!-- /.dk-pull-quote -->', $this->atts['tag'], $style, $content, $this->atts['tag'] );
+    return sprintf( '<%s class="dk-pull-quote" style=%s>%s</%s><!-- /.dk-pull-quote -->', $tag, $style, $content, $tag );
   }
 
   /**
